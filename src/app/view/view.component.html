@@ -1,0 +1,35 @@
+
+<style>
+    .title1{
+        border-radius: 20px;
+    }
+    .card{
+        box-shadow: 2px 2px 30px ;
+    }
+</style>
+<div class="container mt-3 bg-primary pt-3">
+    <h2 class="text-white text-center ">All User Details</h2>
+    <div class="row mt-5">
+        <div class="col-md-6 "  *ngFor="let user of allUsers">     
+            <div class="card mt-3 ">
+                <div class="card-body bg-light p-5">
+                    
+                        <div class="col-md-8 pt-2 ">
+                            <ul class="list-group">
+
+                                <h3 class="mb-4 text-center text-white bg-dark title1">{{user.id}}</h3>
+                                    <li class="list-group-item mt-2"><b>Id: </b>{{user.userId}}
+                                    </li>
+                                    <li class="list-group-item mt-2 text-success"><b>Title: </b>{{user.title}}
+                                    </li>
+                                    <li class="list-group-item mt-2"><b>Body: </b>{{user.title}}
+                                    </li>
+                                
+                              </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
